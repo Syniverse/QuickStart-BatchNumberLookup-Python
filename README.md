@@ -11,7 +11,7 @@ Syniverse Developer Centre (SDC) is at https://developer.syniverse.com
 
 Detailed instructions can be found at https://developer.syniverse.com & https://sdcdocumentation.syniverse.com/index.php
 
-- Python installed (version 3.6 used in the example)
+- Python installed (version 3.6 used in the example, use verion 3.9 for newer version-change file name where relevant.)
 - time, zlib, csv, sys, os, requests module's should be installed ($pip install <module name>)
 
 File Name:PNV-Batch-Number-Lookup-Tool.py
