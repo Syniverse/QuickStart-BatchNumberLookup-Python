@@ -27,7 +27,7 @@ for arg in sys.argv:
     if len(sys.argv) != 4:
         print("\n---Error in argument list")
         print("\n---Usage $python PNV-Batch-number-Lookup-Tool.py <INPUT FILE NAME> <Feature Set> <File Retention in Days>")
-        print("\n---Valid values for feature set: fs1, fs2, fs3 or fs23")
+        print("\n---Valid values for feature set: fs1, fs2, fs3, fs5 or fs23")
         print("\n---File Retention Days should be 1 to 7 only")
         print("\n---Example: $python PNV-Batch-number-Lookup-Tool.py phonenumbers.txt fs1 1")
         sys.exit()
@@ -42,7 +42,7 @@ for arg in sys.argv:
 
 #Validating the command line arguments 
 #command line argument validation for Inputfilename, feature set and file expiry
-#allowed values are input file with .txt extention, feature set allowed are fs1, fs2, fs3 or fs23
+#allowed values are input file with .txt extention, feature set allowed are fs1, fs2, fs3, fs5 or fs23
 #allwed values for file expiry are between 1 and 7
  
 if len(sys.argv) == 4:
@@ -53,16 +53,16 @@ if len(sys.argv) == 4:
         print("\n---Input File:", input_file_name)
     
     '''    
-    if (not fs == "fs1" or fs == "fs2" or fs == "fs3" or fs == "fs23"):
-        print("\n---ERROR: Feature_set not provided or Invalid, allowed values are fs1, fs2, fs3 or fs23 only")
+    if (not fs == "fs1" or fs == "fs2" or fs == "fs3" or fs == "fs5" or fs == "fs23"):
+        print("\n---ERROR: Feature_set not provided or Invalid, allowed values are fs1, fs2, fs3, fs5 or fs23 only")
         sys.exit()
     else:
         print("\n---Feature set entered is :",fs)
     '''
-    if (fs == "fs1" or fs == "fs2" or fs == "fs3" or fs == "fs23"):
+    if (fs == "fs1" or fs == "fs2" or fs == "fs3" or fs == "fs5" or fs == "fs23"):
         print("\n---Feature set entered is :",fs)
     else:
-        print("\n---ERROR: Feature_set not provided or Invalid, allowed values are fs1, fs2, fs3 or fs23 only")
+        print("\n---ERROR: Feature_set not provided or Invalid, allowed values are fs1, fs2, fs3, fs5 or fs23 only")
         sys.exit()
               
     if (file_expiry < 1 or file_expiry > 7 ):
